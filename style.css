@@ -344,6 +344,7 @@ button#submitBtn:hover {
     width: calc((33% - 20px));
     background-color: light-dark(var(--dark), var(--light));
     padding: 15px 30px 30px 30px;
+    margin: 10px;
     box-shadow: 0 5px 10px rbga(0,0,0,0.15);
 }
 
