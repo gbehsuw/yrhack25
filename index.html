@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Receiptify</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1eb72e8ebd.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <div class="name">Mithulan<br>Nanthakumar</div>
+            <ul class="sidemenu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()""></i>
+        </nav>
+        <div class="site-header">
+            <div class="row">
+                <div class="header-row"><span>the</span>solution</div>
+                <div class="header-row-wrapper"></div>
+            </div>
+            <div class="row">
+                <div class="header-row">receiptify</div>
+                <div class="header-row-wrapper"></div>
+            </div>
+        </div>
+        <footer>Sorting your daily purchases in one go.</footer>
+    </div>
+    <section class="pre-loader">
+        <div class="pre-loader-container">
+            <div class="pre-loader-header">
+                <div class="header">
+                    <h1>Innovating and Creating</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+                <div class="header">
+                    <h1 data-text="solutions" style="display: inline;">solutions</h1>
+                    &nbsp;
+                    <h1 style="display: inline;">to financial</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+                <div class="header">
+                    <h1>budgeting and struggles</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+                <div class="header">
+                    <h1>in everyday life</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+                <div class="header">
+                    <h1 style="display: inline;">is the</h1>
+                    &nbsp;&nbsp;
+                    <h1 data-text="goal" style="display: inline;">goal</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+            </div>
+            <div class="pre-loader-btn" onclick="revealSite()">
+                <div class="btn">
+                    Click anywhere
+                    <svg xmlns="https://www.w3.org/2000/svg" viewbox="0 0 68 10">
+                        <defs></defs>
+                        <path
+                            fill="#e2e2dd"
+                            d="M59.2,9.6V6.2h-58v-2c0,0,0,0,0,0h58V0.7L67,5.1L59.2,9.6z"
+                        ></path>
+                    </svg>
+                    to begin saving
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="about">
+            <h2 class="about-title title">
+                About Us
+            </h2>
+            <p class="about-desc desc">
+                My name is Mithulan Nanthakumar and I am a grade 11 student at Richmond Hill High School.
+                Something my parents taught my sister and I when young was the importance of financial management.
+                However, this is complicated for students and adults alike who have not been exposed to helpful tools. 
+                My goal is to create a tool that helps people of all ages learn to track their spending in a simple manner.
+            </p>
+        </section>
+
+        <section class="goal">
+            <div class="goal-text">
+                <h2 class="goal-title title">The Product</h2>
+                <p class="goal-desc desc">Receiptify is a tool to solve just that problem. 
+                    <br>
+                    <br>
+                    Simply upload links to receipts you have 
+                    and observe helpful and insightful data. 
+                    <br>
+                    <br>
+                    With this information, identifying large and small areas of spendature by category becomes incredibly easy.
+                    <br>
+                    <br>
+                    If you need help getting an image for your receipts, I suggest using postimage!
+                </p>
+            </div>
+            <div class="goal-img">
+                <img src="./images/receipt.jpg" alt="Receipts Scattered">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1eb72e8ebd.js" crossorigin="anonymous"></script>
+    <script src="./backend.js" defer></script>
+    <script src="./script.js" defer></script>
+</head>
+<body onload="reveal()">
+    <nav>
+        <div class="logo">Mithulan<br>Nanthakumar</div>
+        <ul class="sidemenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()""></i>
+    </nav>
+    <div class="site-header dash">
+        <div class="row">
+            <div class="header-row"><span>receipt</span>upload</div>
+            <div class="header-row-wrapper"></div>
+        </div>
+    </div>
+    <main class="dashboard">
+        <section class="upload">
+            <input type="text" id="fileUrlInput" placeholder="Enter an image url to your receipt">
+            <button id="submitBtn">Submit</button>
+        </section>
+        <section class="container">
+        </section>
+    </main>
+</body>
+</html>

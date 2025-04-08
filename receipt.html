@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Data</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1eb72e8ebd.js" crossorigin="anonymous"></script>
+    <script src="./backend.js" defer></script>
+    <script src="./script.js" defer></script>
+    <script src="./receiptDetail.js" defer></script>
+</head>
+<body onload="reveal()">
+    <nav>
+        <div class="logo">Mithulan<br>Nanthakumar</div>
+        <ul class="sidemenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="site-header dash">
+        <div class="row">
+            <div class="header-row"><span>receipt</span>Data</div>
+            <div class="header-row-wrapper"></div>
+        </div>
+    </div>
+    <main>
+        <div class="receipt-full">
+            <div class="receipt-container">
+                <div class="receipt-row">
+                    <div class="receipt-col-1">
+                        <img src="./images/receipt.jpg" alt="receipt image" class="receiptimg">
+                    </div>
+                    <div class="receipt-col-2">
+                        <h1 class="subtitle">Receipt Data</h1>
+                        <p>Take a deeper look into the data of your receipt!
+                        </p>
+    
+                        <div class="tab-titles">
+                            <p class="tab-link active-link" onclick="opentab('basic')">Basic</p>
+                            <p class="tab-link" onclick="opentab('price')">Price</p>
+                            <p class="tab-link" onclick="opentab('vendor')">Vendor</p>
+                        </div>
+    
+                        <div class="tab-content active-tab" id="basic">
+                            <ul>
+                                <li><span>Date</span><br><p class="item"></p></li>
+                                <li><span>Created Date</span><br><p class="item"></p></li>
+                                <li><span>Category</span><br><p class="item"></p></li>
+                                <li><span>Name</span><br><p class="item"></p></li>
+                                <li><span>Currency</span><br><p class="item"></p></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="price">
+                            <ul>
+                                <li><span>Subtotal</span><br><p class="item"></p></li>
+                                <li><span>Tax</span><br><p class="item"></p></li>
+                                <li><span>Total</span><br><p class="item"></p></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="vendor">
+                            <ul>
+                                <li><span>Name</span><br><p class="item"></p></li>
+                                <li><span>Type</span><br><p class="item"></p></li>
+                                <li><span>Category</span><br><p class="item"></p></li>
+                                <li><span>Phone Number</span><br><p class="item"></p></li>
+                                <li><span>Address</span><br><p class="item"></p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
